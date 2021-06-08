@@ -1,0 +1,984 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: galaxy_exit
+  examples: |
+    - how long does it take to to exit the galaxy?
+    - How long does it take to to exit the Galaxy?
+    - how much time does it take to exit the galaxy?
+    - How much time does it take to exit the Galaxy?
+    - how long would it take to exit the galaxy?
+    - How long would it take to exit the galaxy?
+    - To exit the galaxy, how long would it take?
+    - to exit the galaxy, How long would it Take?
+    - to exit the galaxy, how much time will it take?
+    - To exit the galaxy, How much time will it take?
+    - to exit the galaxy, how much time would it take?
+    - To exit the galaxy, How much time would it take?
+    - How long would it take to exit a galaxy?
+    - how long does it take to exit a Galaxy?
+
+- intent: biggest_blackhole
+  examples: | 
+    - What is the biggest blackhole in the Universe?
+    - what is the biggest blackhole in the universe?
+    - how big is the largest blackhole in the universe?
+    - How big is the Largest Blackhole in the Universe?
+    - How is the largest blackhole addressed as?
+    - how is the largest Blackhole addressed as?
+    - How long would it take to reach the Largest blackhole in the universe?
+    - how long would it take to reach the largest Blackhole in the Universe?
+    - how long will it take to reach the largest blackhole in the universe?
+    - How long will it take to reach the largest Blackhole in the Universe?
+
+- intent: common_galaxy
+  examples: | 
+    - What is the most common type of galaxy in the Universe?
+    - what is the most common type of galaxy in the universe? 
+    - What is the type of galaxies that are seen the most often?
+    - what is the type of galaxies that are seen the most often?
+    - what is the type of galaxies that ae seen throughout the Universe?
+    - What is the type of galaxies that are seen the throughout the universe?
+    - what type of galaxies are discovered the most throughout the universe?
+    - what type of galaxies are discovered the most throughout the universe?
+    - what is the most common type of galaxies that are dicovered in the universe?
+    - What is the most common type of galaxies that are discovered in the Universe?
+
+- intent: natural_satellites
+  examples: |
+     - How many secondary planets are in our solar system?
+     - how many secondary planets are in our solar system?
+     - In our solar system, how many satellites are present?
+     - in our solar system, how many satellites are present?
+     - in our solar system, how many secondary planets are present?
+     - In our solar system, how many secondary planets are present?
+     - how many moons are present in our solar system?
+     - How many moons are presnt in our solar system?
+     - In our solar system, how many moons are present?
+     - in our solar system, how many moons are present?
+     
+     
+- intent: faq/ask_name
+  examples: |
+     - What is your name?
+     - May I know your name?
+     - What do people call you?
+     - Do you have a name for yourself?
+
+
+- intent: faq/origin_espazimos
+  examples: |
+      - how did espazimos originate?
+      - How did Espazimos originate?
+      - HOW DID ESPAZIMOS ORIGINATE?
+      - The origin of Espazimos.
+      - the origin of espazimos.
+      - THE ORIGIN OF ESPAZIMOS.
+
+
+
+- intent: faq/what_espazimos
+  examples: |
+     - what is espazimos?
+     - What is Espazimos?
+     - WHAT IS ESPAZIMOS?
+     - What is Espazimos, the game?
+     - what is espazimos, the game?
+     - WHAT IS ESPAZIMOS, THE GAME?
+
+- intent: faq/rules_espazimos
+  examples: |
+     - What are the rules of the game?
+     - what are the rules of the game?
+     - WHAT ARE THE RULES OF THE GAME?
+     - What are the rules that should be followed when playing Espazimos?
+     - what are the rules that should be followed when playing espazimos?
+     - what are the rules that should be followed when playing espazimos?
+     - Rules of Espazimos.
+     - rules of espazimos.
+     - RULE OF ESPAZIMOS.
+
+
+- intent: faq/space_junk
+  examples: |
+      - Right now, how much tons of Space Junk, is orbiting around the Earth?  
+      - How much tons of space junk, is orbting the Earth?
+      - now, how much tons of space debris, is currently in space?
+      - around the earth, how much tons of space debris is orbiting earth right now?
+      - currently, how many tons of space junk is orbiting around the earth right now?
+      - currently, how many tons of space debris is orbiting around the earth right now?
+      - currently, how much tons of space debris is orbiting around the earth right now?
+      - currently, how much tons of space junk is orbiting around the earth right now?
+      - How many tons of space junk, is orbting the Earth?
+      - currently in space, how many tons of Space junk is present?
+      - currently in space, how much tons of space junk is present?
+      - currently in space, how many tons of space debris is present?
+      - currently in space, how much tons of space debris is present?
+
+- intent: faq/red_planet
+  examples: |
+       - which planet is known as the red planet?
+       - which planet is often known as the red planet?
+       - which planet has a reddish tinit to it?
+       - which planet has blue sunset?
+       - which planet has a red sky?
+       - which planet has the biggest volcano in the solar system?
+       - Nasa's latest mission, which was a success, was to which planet?
+       - which plaents has only two satellites?
+       - which planet has only two secondary planets?
+       - which planet has two moons?
+       - which planet in our solar system, has only two satellites?
+       - which planet in our solar system, has only two secondary planets?
+      
+- intent: faq/space_tourist   
+  examples: |
+       - who was the first woman tourist in space?
+       - which woman was the first tourist in space?
+       - What is the name of the first woman space tourist?
+       - who was the first woman space tourist?
+       - can you name a woman who was the first tourist in Space?
+       - can you name the woman who was the first tourist in space?
+       - can you say which woman was the first visitor in space?
+       - could you tell which woman was the first tourist to spcae?
+       - could you say which woman was the first tourist in space?
+
+- intent: faq/water_jupiter
+  examples: |
+       - which satellite of Jupiter is presumed to have water?
+       - which secondary planet of Jupiter is presumed to have water?
+       - which secondary planet of the Gas giant, is presumed to have water?
+       - which moon of jupiter is presumed to have water?
+       - which satellite in the solar system tends to have water?
+       - which moon in the solar system tends to have water?
+       - which secondary planet of the solar system tends to have water?
+       - in the solar system, which satellite of planet, has water?
+       - In the solar systme, which secondary planet, has water?
+       - In the solar system, which moon of a planet has water?
+       - Could you name the satellite which has water in it?
+       - Could you name the secondary planet which has water in it?
+       - Could you name the moon of a planet which has water in it?
+       - Can you tell which satellite has water?
+       - Can you tell which secondary planet has water?
+       - Can you tell which moon of a planet has water?
+
+- intent: faq/distant_object
+  examples: |
+       - What is the most Distant Human-made object in space?
+       - what is the most distant satellite in space?
+       - What is the name of the satellite, which has travelled the farthest?
+       - could I know what is the most distant human-made object in space?
+       - Could I know what is the most distant satellite in space?
+       - Could I know the name of the satellite, which has travelled the farthest?
+       - Can I know what is the most distant satellite in space?
+       - Can I know he name of the satellite, which has travelled the farthest?
+       - What is the most distant human-made object in space and how many kilometres has it travelled?
+
+- intent: faq/distance_sun
+  examples: |
+       - What is the distance between sun and the Earth?
+       - what is the distance between the sun and earth?
+       - what is the difference between the sun and the earth?
+       - what is the difference between sun and earth?
+       - what is the approximate distance between the sun and earth?
+       - what is the approximate distance between sun and the earth?
+       - what is the approximate distance between the sun and the earth?
+       - what is the approximate distance between sun and earth?
+       - What is the distance betweeen the sun and earth in miles?
+       - What is the distance betweeen  sun and the earth in miles?  
+       - What is the distance betweeen the sun and the earth in miles?
+       - What is the distance betweeen sun and earth in miles?
+       
+
+- intent: faq/large_asteroid
+  examples: |
+       - Where did the largest ever asteroid hit the Earth?
+       - Where did the largest ever asteroid hit Earth?
+       - When did the largest ever asteroid hit Earth?
+       - What is the location of the largest ever asteroid's crater?
+       - In which country did the crater occur?
+       - In which continent did the crater occur?
+       - What was the crater know was?
+       - What is the name of the crater?
+       - Where did the biggest ever asteroid hit the earth?
+       - Where did the biggest ever asteroid hit earth?
+       - When did the biggest ever asteroid hit Earth?
+       - What is the location of the biggest ever asteroid's crater?
+       - how big is the crater?
+       - What is the diamter of the crater?
+       - what is the radius of the crater?
+
+- intent: faq/woman_astronaut
+  examples: |
+       - Which female astronaut spent the maximum time in space?
+       - What is the name of the female astronaut who spent the maxium time in Space?
+       - Which female astrounaut spent the most time in Space?
+       - What is the name of the female astronaut who spent the most time in Space? 
+       - Can I know Which female astronaut spent the maximum time in space?
+       - Can I know what is the name of the female astronaut who spent the maxium time in Space?  
+       - Can i know  Which female astrounaut spent the most time in Space?
+       - Can I know What is the name of the female astronaut who spent the most time in Space? 
+       - Could I know Which female astronaut spent the maximum time in space?
+       - Could I know What is the name of the female astronaut who spent the maxium time in Space?
+       - Could I know what is the name of the female astrounaut spent the most time in Space? 
+
+- intent: faq/fastest_revolutiontime
+  examples: | 
+       - Which planet has the fastest revolution time?
+       - Which planet in the solar system has the fastest revolution time?
+       - Which planet has the most fastest revolution time?
+       - Which planet in the solar system has the most fastest revolution time?
+       - Can I know Which planet has the fastest revolution time?
+       - Can I know Which planet in the solar system has the fastest revolution time?
+       - Can I know Which planet has the most fastest revolution time?
+       - Can I know Which planet in the solar system has the most fastest revolution time? 
+       - Could I know Which planet has the fastest revolution time?
+       - Could I know Which planet in the solar system has the fastest revolution time?
+       - Could I know Which planet has the most fastest revolution time?
+       - Could I know Which planet in the solar system has the most fastest revolution time?
+
+- intent: faq/first_satellite
+  examples: | 
+        - Which was the first ever artificial satellite launched into space?
+        - Which was the first ever artificial satellite and when was it launched?
+        - Which was the first ever artificial satellite and who launched it?
+        - What was the name of the first ever artificial satellite launched?
+        - Could I know Which was the first ever artificial satellite launched into space?
+        - Could I know which was the first ever artificial satellite and when was it launched?
+        - Could I know Which was the first ever artificial satellite and who launched it?
+        - Could I know What was the name of the first ever artificial satellite launched? 
+        - Can I know Which was the first ever artificial satellite launched into space?
+        - Can I know which was the first ever artificial satellite and when was it launched?
+        - Can I know Which was the first ever artificial satellite and who launched it?
+        - Can I know What was the name of the first ever artificial satellite launched? 
+
+- intent: faq/planet_neptune
+  examples: |
+        - After which god, is Neptune named after?
+        - after which greek god, is neptune named after?
+        - Neptune is named after which god?
+        - Neptune is named after which Greek god?
+        - Which planet is named after poseidon?
+        - Which planet is named after the Greek god, poseidon?
+        - after Which planet is named after poseidon?
+        - after Which planet is named after the Greek god, poseidon
+        - Could I know After which god, is Neptune named after?
+        - Could I know after which greek god, is neptune named after?
+        - Could I know Neptune is named after which god?
+        - Could I know Neptune is named after which Greek god?
+        - Could I know Which planet is named after poseidon?
+        - Could I know Which planet is named after the Greek god, poseidon?
+        - Could I know after Which planet is named after poseidon?
+        - Could I know after Which planet is named after the Greek god, poseidon
+        - Can I know After which god, is Neptune named after?
+        - Can I know after which greek god, is neptune named after?
+        - Can I know Neptune is named after which god?
+        - Can I know Neptune is named after which Greek god?
+        - Can I know Which planet is named after poseidon?
+        - Can I know Which planet is named after the Greek god, poseidon?
+        - Can I know after Which planet is named after poseidon?
+        - Can I know after Which planet is named after the Greek god, poseidon?
+
+- intent: faq/largest_volcano
+  examples: |
+       - What is the largest volcano in the Universe?
+       - What is the largest volcano in our Solar System?
+       - Where is the largest volacno in the universe located?
+       - Where is the largest volcano in the Solar System located?
+       - What is the largest volcano known as?
+       - Can I know What is the largest volcano in the Universe?
+       - Can I know  What is the largest volcano in our Solar System?
+       - Can I know  Where is the largest volacno in the universe located?
+       - Can I know  Where is the largest volcano in the Solar System located?
+       - Can I know  What is the largest volcano known as?
+       - Could I know What is the largest volcano in the Universe?
+       - Could I know What is the largest volcano in our Solar System?
+       - Could I know Where is the largest volacno in the universe located?
+       - Could I know Where is the largest volcano in the Solar System located?
+       - Could I know What is the largest volcano known as? 
+       
+- intent: faq/invention_telescope
+  examples: |
+       - Who discovered the optical instrument which makes farther objects closer to see?
+       - who invented the optical device which makes farther objects closer to see?
+       - Which human invented the optical object which makes farther object closer to see?
+       - Who invented the optical device instrument which makes farther objects closer to see?
+       - Who discovered the optical device which makes farther objects closer to see?
+       - Which human discovered the optical device which makes farther objects closer to see?
+       - Could I know Who discovered the optical instrument which makes farther objects closer to see?
+       - Could I know who invented the optical device which makes farther objects closer to see?
+       - Could I know Which human invented the optical object which makes farther object closer to see?
+       - Could I know Who invented the optical device instrument which makes farther objects closer to see?
+       - Could I know Who discovered the optical device which makes farther objects closer to see?
+       - Could I know which human discovered the optical device which makes farther objects closer to see?
+       - Can I know Who discovered the optical instrument which makes farther objects closer to see?
+       - Can I know who invented the optical device which makes farther objects closer to see?
+       - Can I know Which human invented the optical object which makes farther object closer to see?
+       - Can I know Who invented the optical device instrument which makes farther objects closer to see?
+       - Can I know Who discovered the optical device which makes farther objects closer to see?
+       - Can I know Which human discovered the optical device which makes farther objects closer to see?
+         
+         
+- intent: faq/astronomer_sun 
+  examples: |
+       - Which astronomer proposed that  the planets orbit The Sun?
+       - Which astronomer thought that the planets orbit the sun?
+       - Which astronomer's book was banned by the Church which contained the theory that the Earth revolved around the sun?
+       - Name of the astronomer proposed that  the planets orbit The Sun?
+       - Name of the astronomer who thought that the planets orbit the sun?
+       - Name of the astronomer's book which was banned by the Church which contained the theory that the Earth revolved around the sun?
+       - could I know Which astronomer proposed that  the planets orbit The Sun?
+       - could I know Which astronomer thought that the planets orbit the sun?
+       - could I know Which astronomer's book was banned by the Church which contained the theory that the Earth revolved around the sun?
+       - could I know the Name of the astronomer proposed that  the planets orbit The Sun?
+       - could I know the Name of the astronomer who thought that the planets orbit the sun?
+       - could I know the Name of the astronomer's book which was banned by the Church which contained the theory that the Earth revolved around the sun?
+       - Can I know Which astronomer proposed that  the planets orbit The Sun?
+       - Can I know Which astronomer thought that the planets orbit the sun?
+       - Can I know Which astronomer's book was banned by the Church which contained the theory that the Earth revolved around the sun?
+       - Can I know the  Name of the astronomer proposed that  the planets orbit The Sun?
+       - Can I know the Name of the astronomer who thought that the planets orbit the sun?
+       - Can I know the Name of the astronomer's book which was banned by the Church which contained the theory that the Earth revolved around the sun?
+
+- intent: faq/asteroid_belt
+  examples: |
+       - What is the name of the Asteriod belt between the Red Planet and the Giant Planet?
+       - what is the name of the asteroid belt between the planets Mars and Jupiter?
+       - What is the name of the asteroid belt between mars and jupiter?
+       - What is the asteroid belt between the red planet and the giant planet known as?
+       - What is the asteroid belt between the planets mars and jupiter known as?    
+       - What is the asteroid belt between mars and jupiter known as?    
+       - Could I know What is the name of the Asteriod belt between the Red Planet and the Giant Planet?
+       - Could I know what is the name of the asteroid belt between the planets Mars and Jupiter?
+       - Could I know What is the name of the asteroid belt between mars and jupiter?
+       - Could I know What is the asteroid belt between the red planet and the giant planet known as?
+       - Could I know What is the asteroid belt between the planets mars and jupiter known as?    
+       - Could I know What is the asteroid belt between mars and jupiter known as?    
+       - can i know What is the name of the Asteriod belt between the Red Planet and the Giant Planet?
+       - can i know what is the name of the asteroid belt between the planets Mars and Jupiter?
+       - can i know What is the name of the asteroid belt between mars and jupiter?
+       - can i know What is the asteroid belt between the red planet and the giant planet known as?
+       - can i know What is the asteroid belt between the planets mars and jupiter known as?    
+       - can i know What is the asteroid belt between mars and jupiter known as?        
+       
+- intent: faq/constellation_hotteststar
+  examples: |
+       - Which constellation holds the hottest place in the universe?
+       - In which constellation is the hottest place in the universe located?
+       - The hottest place in the universe is located in which constellation?
+       - What is the name of the constellation in which the hottest place in the universe located?
+       - Can I know Which constellation holds the hottest place in the universe?
+       - Can I know In which constellation is the hottest place in the universe located?
+       - Can I know The hottest place in the universe is located in which constellation?
+       - Can I know What is the name of the constellation in which the hottest place in the universe located?
+       - Could I know Which constellation holds the hottest place in the universe?
+       - Could I know In which constellation is the hottest place in the universe located?
+       - Could I know The hottest place in the universe is located in which constellation?
+       - Could I know What is the name of the constellation in which the hottest place in the universe located?      
+
+- intent: faq/sun_equinox
+  examples: |
+       - The day on which the Sun’s direct rays cross the celestial equator is called?
+       - the day when the sun's direct ray cross the celestial equator is called as?
+       - the day when the sun's direct ray cross the celestial equator is known as?
+       - When the sun's direct rays cross the celestial equator, the day is known as?
+       - When the sun's direct rays cross the celestial equator, the day is called as?
+       - What is the name of The day on which the Sun’s direct rays cross the celestial equator is called?
+       - What is the name of the day when the sun's direct ray cross the celestial equator is called as?
+       - What is the name of the day when the sun's direct ray cross the celestial equator is known as?
+       - What is the event known as When the sun's direct rays cross the celestial equator, the day is known as?
+       - What is the event known as When the sun's direct rays cross the celestial equator, the day is called as?
+       - Could I know The day on which the Sun’s direct rays cross the celestial equator is called?
+       - Could I know the day when the sun's direct ray cross the celestial equator is called as?
+       - Could I know the day when the sun's direct ray cross the celestial equator is known as?
+       - Could I know When the sun's direct rays cross the celestial equator, the day is known as?
+       - Could I know what happens When the sun's direct rays cross the celestial equator, the day is called as?
+       - Could I know What is the name of The day on which the Sun’s direct rays cross the celestial equator is called?
+       - Could I know What is the name of the day when the sun's direct ray cross the celestial equator is called as?
+       - Could I know What is the name of the day when the sun's direct ray cross the celestial equator is known as?
+       - Could I know What is the event known as When the sun's direct rays cross the celestial equator, the day is known as?
+       - Could I know What is the event known as When the sun's direct rays cross the celestial equator, the day is called as?
+       - Can I know The day on which the Sun’s direct rays cross the celestial equator is called?
+       - Can I know the day when the sun's direct ray cross the celestial equator is called as?
+       - Can I know the day when the sun's direct ray cross the celestial equator is known as?
+       - Can I know When the sun's direct rays cross the celestial equator, the day is known as?
+       - Can I know what happens When the sun's direct rays cross the celestial equator, the day is called as?
+       - Can I know What is the name of The day on which the Sun’s direct rays cross the celestial equator is called?
+       - Can I know What is the name of the day when the sun's direct ray cross the celestial equator is called as?
+       - Can I know What is the name of the day when the sun's direct ray cross the celestial equator is known as?
+       - Can I know What is the event known as When the sun's direct rays cross the celestial equator, the day is known as?
+       - Can I know What is the event known as When the sun's direct rays cross the celestial equator, the day is called as?
+       
+   
+- intent: faq/alignment_celestialbodies
+  examples: |
+       - What term describes the alignment of three celestial bodies?
+       - What is the term that is used to describe the alignment of three celestial bodies?
+       - What word is used to describe the alignmnet of three celestial bodies?
+       - What is the name of the term that describes the allignment of three celestial bodies?
+       - can i know What term describes the alignment of three celestial bodies?
+       - can i know What is the term that is used to describe the alignment of three celestial bodies?
+       - can i know What word is used to describe the alignmnet of three celestial bodies?
+       - can i know What is the name of the term that describes the allignment of three celestial bodies?
+       - Could I know What term describes the alignment of three celestial bodies?
+       - Could I know What is the term that is used to describe the alignment of three celestial bodies?
+       - Could I know What word is used to describe the alignmnet of three celestial bodies?
+       - Could I know What is the name of the term that describes the allignment of three celestial bodies?   
+     
+
+- intent: faq/columbia_disaster
+  examples: | 
+       - In which year did the space shuttle Columbia disaster take place?
+       - When did the space shuttle Columbia disaster take place?
+       - what was the name of the space disaster that happenend in 2003?
+       - What was the name of the space disaster that took place in 2003?
+       - Can I know In which year did the space shuttle Columbia disaster take place?
+       - Can I know When did the space shuttle Columbia disaster take place?
+       - Can I know what was the name of the space disaster that happenend in 2003?
+       - Can I know What was the name of the space disaster that took place in 2003?
+       - Could I know  In which year did the space shuttle Columbia disaster take place?
+       - Could I know When did the space shuttle Columbia disaster take place?
+       - Could I know what was the name of the space disaster that happenend in 2003?
+       - Could I know What was the name of the space disaster that took place in 2003?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- intent: faq/oldest_planet
+  examples:  | 
+       - Which is the oldest planet in the solar system?
+       - What is the oldest planet in the solar system?
+       - How old is the oldest planet in the solar system is?
+       - What is the name of the oldest planet in the solar system?
+       - When was the oldest planet formed?
+       - Can i know Which is the oldest planet in the solar system?
+       - Can i know What is the oldest planet in the solar system?
+       - Can i know How old is the oldest planet in the solar system is?
+       - Can i know How old is the oldest planet in the solar system is?
+       - can i know What is the name of the oldes planet in the solar system?
+       - can i know  When was the oldest planet formed?
+       - could i know Which is the oldest planet in the solar system?
+       - could i know What is the oldest planet in the solar system?
+       - could i know How old is the oldest planet in the solar system is?
+       - could i know What is the name of the oldes planet in the solar system?
+       - could i know When was the oldest planet formed?
+
+- intent: faq/supersonic_winds
+  examples: |  
+       - Which planet has supersonic winds?
+       - what is the planet that has supersonic winds?
+       - What is the name of the planet which has supersonic winds?
+       - Which planet has supersonic winds in our solar system?
+       - what is the planet that has supersonic winds in our solar system?
+       - What is the name of the planet which has supersonic winds in our solar system?
+       - Le Verrier's planet has supersonic winds. Which planet are we talking about?
+       - Can i know  Which planet has supersonic winds?
+       - can i know what is the planet that has supersonic winds?
+       - can i know What is the name of the planet which has supersonic winds?
+       - can i know Which planet has supersonic winds in our solar system?
+       - can i know what is the planet that has supersonic winds in our solar system?
+       - can i know What is the name of the planet which has supersonic winds in our solar system?
+       - Could i know Which planet has supersonic winds?
+       - Could i know what is the planet that has supersonic winds?
+       - Could i know What is the name of the planet which has supersonic winds?
+       - Could i know Which planet has supersonic winds in our solar system?
+       - Could i know what is the planet that has supersonic winds in our solar system?
+       - Could i know What is the name of the planet which has supersonic winds in our solar system?
+
+- intent: faq/sun_outerlayer
+  examples: |
+       - What is sun's outer most layer called as?
+       - What is the sun's outer most layer known as?
+       - What is the name of the sun's outer most layer?
+       - can i know What is sun's outer most layer called as?
+       - can i know What is the sun's outer most layer known as?
+       - can i know What is the name of the sun's outer most layer?
+       - could i know What is sun's outer most layer called as?
+       - could i know What is the sun's outer most layer known as?
+       - could i know What is the name of the sun's outer most layer?
+
+- intent: faq/astronomer_daughternameinmoon
+  examples: |
+       - Which astronaut is famous for having written his daughter’s initials on the moon?
+       - What is the name of the astronaut who is famous for having written his daughter’s initials on the moon?
+       - who wrote his daughter's astronaut's initials on the moon?
+       - Which astronaut is well know  for having written his daughter’s initials on the moon?
+       - Can i know Which astronaut is famous for having written his daughter’s initials on the moon?
+       - Can i know What is the name of the astronaut who is famous for having written his daughter’s initials on the moon?
+       - Can i know who wrote his daughter's astronaut's initials on the moon?
+       - Can i know Which astronaut is well know  for having written his daughter’s initials on the moon?
+       - Could I know Which astronaut is famous for having written his daughter’s initials on the moon?
+       - Could I know What is the name of the astronaut who is famous for having written his daughter’s initials on the moon?
+       - Could I know who wrote his daughter's astronaut's initials on the moon?
+       - Could I know Which astronaut is well know  for having written his daughter’s initials on the moon?
+    
+- intent: faq/nasa_fullform
+  examples: | 
+       - What does NASA stand for?
+       - what does nasa mean?
+       - what does nasa's full form?
+       - what does National Aeronautics and Space Administration Stand for?
+       - can i know What does NASA stand for?
+       - can i know what does nasa mean?
+       - can i know what does nasa's full form?
+       - can i know what does National Aeronautics and Space Administration Stand for?
+       - could i know What does NASA stand for?
+       - could i know what does nasa mean?
+       - could i know what does nasa's full form?
+       - could i know what does National Aeronautics and Space Administration Stand for?
+
+- intent: faq/vesta_celestialbody
+  examples: |
+       - Vesta is which type of celestial body?
+       - What type of celestial body is Vesta?
+       - What is Vesta?
+       - can i know Vesta is which type of celestial body?
+       - can i know What type of celestial body is Vesta?
+       - can i know What is Vesta?
+       - could i know Vesta is which type of celestial body?
+       - could i know What type of celestial body is Vesta?
+       - could i know What is Vesta?
+
+- intent: faq/coldestplace_universe
+  examples: |
+       - What is the coldest place in the universe?
+       - how cold is the coldest place in the universe?
+       - where is the coldest place in the universe is located at?
+       - In which nebula is the coldest place in the universe located?
+       - What is the name of the nebula where the coldest place in the universe located?
+       - Can I know What is the coldest place in the universe?
+       - Can I know how cold is the coldest place in the universe?
+       - Can I know where is the coldest place in the universe is located at?
+       - Can I know In which nebula is the coldest place in the universe located?
+       - Can I know What is the name of the nebula where the coldest place in the universe located?
+       - could i know What is the coldest place in the universe?
+       - could i know how cold is the coldest place in the universe?
+       - could i know where is the coldest place in the universe is located at?
+       - could i know In which nebula is the coldest place in the universe located?
+       - could i know What is the name of the nebula where the coldest place in the universe located?
+
+- intent: faq/common_typestar
+  examples: | 
+       - What is the most common type of stary found in the milky-way galaxy? 
+       - What is the name of the most common type of  star found in the our galaxy?
+       - What is the type of the star, which is most commonly found?
+       - what is the type of the star, which is most commonly found in our galaxy?
+       - What is the name of the most common type of star found in the mily-way galaxy?
+       - could i know What is the most common type of stary found in the milky-way galaxy? 
+       - could i know What is the name of the most common type of  star found in the our galaxy?
+       - could i know What is the type of the star, which is most commonly found?
+       - could i know what is the type of the star, which is most commonly found in our galaxy?
+       - could i know What is the name of the most common type of star found in the mily-way galaxy?
+       - can i know What is the most common type of stary found in the milky-way galaxy? 
+       - can i know What is the name of the most common type of  star found in the our galaxy?
+       - can i know What is the type of the star, which is most commonly found?
+       - can i know what is the type of the star, which is most commonly found in our galaxy?
+       - can i know What is the name of the most common type of star found in the mily-way galaxy?
+
+- intent: faq/cost_spacesuit
+  examples: | 
+       - how much does it cost to create a space suit?
+       - how expensive is it to create a space suit?
+       - how long does it take to create a spacesuit?
+       - Can i now how much does it cost to create a space suit?
+       - Can i now how expensive is it to create a space suit?
+       - Can i now how long does it take to create a spacesuit? 
+       - could i know how much does it cost to create a space suit?
+       - could i know how expensive is it to create a space suit?
+       - could i know how long does it take to create a spacesuit?
+
+- intent: faq/constellation_number
+  examples: |
+       - how many constellations are present?
+       - how many constellations are present in the universe?
+       - how many constellation can be seen?
+       - how many constellation can be seen in the universe?
+       - could i know how many constellations are present?
+       - could i know how many constellations are present in the universe?
+       - could i know how many constellation can be seen?
+       - could i know how many constellation can be seen in the universe?
+       - can i know how many constellations are present?
+       - can i know how many constellations are present in the universe?
+       - can i know how many constellation can be seen?
+       - can i know how many constellation can be seen in the universe?
+
+- intent: faq/unitmeasurement_expansionuniverse
+  examples: |  
+       - What is the unit of measurement used to describe the expansion of the universe?
+       - What is the name of the unit of measurement that is used to describe the expansion of the universe?
+       - what unit of measurement is used to describe the expansion of the universe?
+       - which unit of measurement is used to describe the expansion of the universe?
+       - can i know What is the unit of measurement used to describe the expansion of the universe?
+       - can i know What is the name of the unit of measurement that is used to describe the expansion of the universe?
+       - can i know what unit of measurement is used to describe the expansion of the universe?
+       - can i know which unit of measurement is used to describe the expansion of the universe?
+       - could i know What is the unit of measurement used to describe the expansion of the universe?
+       - could i know What is the name of the unit of measurement that is used to describe the expansion of the universe?
+       - could i know what unit of measurement is used to describe the expansion of the universe?
+       - could i know which unit of measurement is used to describe the expansion of the universe? 
+
+- intent: faq/animal_space
+  examples: |
+       - What was the first ever animal sent into space?
+       - when was the first ever animal sent into space?
+       - in which satellite was the first ever animal sent through?
+       - What species was the first ever animal that was sent into space?
+       - what was the name of the first ever animal that was sent into space?
+       - What was the name of a dog that was sent into space?
+       - could i know What was the first ever animal sent into space?
+       - could i know  when was the first ever animal sent into space?
+       - could i know  in which satellite was the first ever animal sent through?
+       - could i know What species was the first ever animal that was sent into space?
+       - could i know what was the name of the first ever animal that was sent into space?
+       - could i know What was the name of a dog that was sent into space?
+       - can i know What was the first ever animal sent into space?
+       - can i know when was the first ever animal sent into space?
+       - can i know in which satellite was the first ever animal sent through?
+       - can i know What species was the first ever animal that was sent into space?
+       - can i know what was the name of the first ever animal that was sent into space?
+       - can i know What was the name of a dog that was sent into space?
+
+- intent: faq/whonamed_curosity
+  examples: |
+       - Who named curosity?
+       - who named the mars rover?
+       - who named Nasa's mars rover, Curosity?
+       - Which grade student came up with the name of curosity?
+       - can i know Who named curosity?
+       - can i know who named the mars rover?
+       - can i know who named Nasa's mars rover, Curosity?
+       - can i know Which grade student came up with the name of curosity? 
+       - could i know Who named curosity?
+       - could i know who named the mars rover?
+       - could i know who named Nasa's mars rover, Curosity?
+       - could i know Which grade student came up with the name of curosity?
+       
+
+- intent: faq/planet_diamond
+  examples: |
+       - which planet in the universe is made out of diamonds?
+       - which planet in the universe is made out of diamonds and graphite?
+       - what is the name of the planet which is entirely made out of diamonds? 
+       - what is the name of the planet which is entirely made out of diamonds and graphite?
+       - what planet is only made of diamonds and graphite?
+       - can i know which planet in the universe is made out of diamonds?
+       - can i know which planet in the universe is made out of diamonds and graphite?
+       - can i know what is the name of the planet which is entirely made out of diamonds? 
+       - can i know what is the name of the planet which is entirely made out of diamonds and graphite?
+       - can i know what planet is only made of diamonds and graphite? 
+       - could i know which planet in the universe is made out of diamonds?
+       - could i know which planet in the universe is made out of diamonds and graphite?
+       - could i know what is the name of the planet which is entirely made out of diamonds? 
+       - could i knowwhat is the name of the planet which is entirely made out of diamonds and graphite?
+       - could i know what planet is only made of diamonds and graphite?
+
+- intent: faq/milkyway_galaxytype
+  examples: |
+       - what type of galaxy is milky way?
+       - what type of galaxy is the milky way?
+       - what is the name of the type of galaxy that milky way is?
+       - could i know what type of galaxy is milky way?
+       - could i know what type of galaxy is the milky way?
+       - could i know what is the name of the type of galaxy that milky way is?
+       - can i know what type of galaxy is milky way?
+       - can i know what type of galaxy is the milky way?
+       - can i know what is the name of the type of galaxy that milky way is?
+       - can you tell me what type of galaxy is milky way?
+       - can you tell me what type of galaxy is the milky way?
+       - can you tell me what is the name of the type of galaxy that milky way is?
+       - could you tell me what type of galaxy is milky way?
+       - could you tell me what what type of galaxy is the milky way?
+       - could you tell me what what is the name of the type of galaxy that milky way is?
+       
+
+- intent: faq/strongest_magnetinuniverse
+  examples: |
+       - What is the strongest magnet in the universe?
+       - Which object is the strongest magnet in the universe?
+       - Which star is the strongest magnet in the universe?
+       - What is the name of the strongest ever magnet in the universe?
+       - what is the name of the object which is the strongest ever magnet in the universe?
+       - What is the name of the star which is the strongest ever magnet in the universe?
+       - could i know What is the strongest magnet in the universe?
+       - could i knowWhich object is the strongest magnet in the universe?
+       - could i know Which star is the strongest magnet in the universe?
+       - could i know What is the name of the strongest ever magnet in the universe?
+       - could i know what is the name of the object which is the strongest ever magnet in the universe?
+       - could i know What is the name of the star which is the strongest ever magnet in the universe?
+       - can i know What is the strongest magnet in the universe?
+       - can i know Which object is the strongest magnet in the universe?
+       - can i know Which star is the strongest magnet in the universe?
+       - can i know What is the name of the strongest ever magnet in the universe?
+       - can i know what is the name of the object which is the strongest ever magnet in the universe?
+       - can i know What is the name of the star which is the strongest ever magnet in the universe?
+
+- intent: faq/biggest_asteroidhit
+  examples: |
+       - What was the biggest asteroid hit that wass ever witnessed?
+       - what was the bigget asteroid hit that was witnessed?
+       - where did the biggest ever asteroid hit?
+       - how big was the impact frome the asteroid?
+       - how big was the asteroid?
+       - what was the code name of the asteroid?
+       - could i know What was the biggest asteroid hit that wass ever witnessed?
+       - could i know what was the bigget asteroid hit that was witnessed?
+       - could i know where did the biggest ever asteroid hit?
+       - could i know how big was the impact frome the asteroid?
+       - could i know how big was the asteroid?
+       - could i know what was the code name of the asteroid?
+       - can i know what was the biggest asteroid hit that wass ever witnessed?
+       - can i know what was the bigget asteroid hit that was witnessed?
+       - can i know where did the biggest ever asteroid hit?
+       - can i know how big was the impact frome the asteroid?
+       - can i know how big was the asteroid?
+       - can i know what was the code name of the asteroid?
+       
+- intent: faq/age_universe
+  examples: |
+       - What is the age of the universe?
+       - how old is the universe?
+       - how many years is the universe old?
+       - when was the universe formed?
+       - could i know What is the age of the universe?
+       - could i know how old is the universe?
+       - could i know how many years is the universe old?
+       - could i know when was the universe formed?
+       - can i know What is the age of the universe?
+       - can i know how old is the universe?
+       - can i know how many years is the universe old?
+       - can i know when was the universe formed?
+
+- intent: faq/neutron_spin
+  examples: |
+       - how many times does a neutron star rotate in a second?
+       - how many time does a neutron star rotate per second?
+       - how fast can a neutron star spin?
+       - how many times could a neutron star spin in a second?
+       - how many teimes could a neutron stat spin per second?
+       - how many times could a neutron star rotate in a second?
+       - how many teimes could a neutron stat rotate per second?
+       - how many times can a neutron star spin in a second?
+       - how many teimes can a neutron stat spin per second?
+       - how many times can a neutron star rotate in a second?
+       - how many teimes can a neutron stat rotate per second?
+       - could i know how many times does a neutron star rotate in a second?
+       - could i know how many time does a neutron star rotate per second?
+       - could i know how fast can a neutron star spin?
+       - could i know how many times could a neutron star spin in a second?
+       - could i know how many teimes could a neutron stat spin per second?
+       - could i know how many times could a neutron star rotate in a second?
+       - could i know how many teimes could a neutron stat rotate per second?
+       - could i know how many times can a neutron star spin in a second?
+       - could i know how many teimes can a neutron stat spin per second?
+       - could i know how many times can a neutron star rotate in a second?
+       - could i know how many teimes can a neutron stat rotate per second?
+       
+
+- intent: faq/super_moon
+  examples: |
+       - what is a supermoon?
+       - when does supermoon happen?
+       - what is the meaning of the supermoon?
+       - how does a supermoon occur?
+       - could i know what is a supermoon?
+       - could i know when does supermoon happen?
+       - could i know what is the meaning of the supermoon?
+       - could i know  how does a supermoon occur? 
+       - can i know what is a supermoon?
+       - can i know when does supermoon happen?
+       - can i know what is the meaning of the supermoon?
+       - can i know how does a supermoon occur?
+
+- intent: faq/largest_startype
+  examples: |
+       - what is the largest type of star in space?
+       - what is the name of the type of the star that is the largest in space?
+       - what is the largest type of star in universe?
+       - what is the name of the type of the star that is the largest in universe?
+       - could i know what is the largest type of star in space?
+       - could i know what is the name of the type of the star that is the largest in space?
+       - could i know what is the largest type of star in universe?
+       - could i know what is the name of the type of the star that is the largest in universe?
+
+       - can i know what is the largest type of star in space?
+       - can i know what is the name of the type of the star that is the largest in space?
+       - can i know what is the largest type of star in universe?
+       - can i know what is the name of the type of the star that is the largest in universe?
+
+- intent: faq/satellites_jupiter
+  examples: |
+       - how many satellites does jupiter have?
+       - how many secondary planets does jupiter have?
+       - how many moons does jupiter have?
+       - could i know how many satellites does jupiter have?
+       - could i know how many secondary planets does jupiter have?
+       - could i know how many moons does jupiter have? 
+       - can i know how many satellites does jupiter have?
+       - can i know how many secondary planets does jupiter have?
+       - can i know how many moons does jupiter have?
+
+- intent: faq/largest_crater
+  examples: |
+       - what is the largest crater in the universe?
+       - what is the largest crater ever in the universe?
+       - what is the largest crater in the space? 
+       - what is the largest ever crater in the space?
+       - what is the largest ever crater in the solar system?
+       - what is the largest ever crater in solar system?
+       - how wide is the largest crater in space?
+       - how wide is the largest crater in the space?
+       - how wide is the largst crater in the universe?
+       - how wide is the largest crater in universe?
+       - how wide is the largest crater in the solar system?
+       - how wide is the largest crater in solar system?
+       - where did the largest ever crater in the solar system occur?
+       - how deep was the largest ever crater in the universe?
+       - how deep was the largest ever crater in space?
+       - how deep was the largest ever crater in the space?
+       - how deep was the largest ever crater in the solar system?
+       - how deep was the largest ever crater in solar system?
+       - could i know what is the largest crater in the universe?
+       - could i know what is the largest crater ever in the universe?
+       - could i know what is the largest crater in the space? 
+       - could i know what is the largest ever crater in the space?
+       - could i know what is the largest ever crater in the solar system?
+       - could i know what is the largest ever crater in solar system?
+       - could i know how wide is the largest crater in space?
+       - could i know how wide is the largest crater in the space?
+       - could i know how wide is the largst crater in the universe?
+       - could i know how wide is the largest crater in universe?
+       - could i know how wide is the largest crater in the solar system?
+       - could i know how wide is the largest crater in solar system?
+       - could i know where did the largest ever crater in the solar system occur?
+       - could i know how deep was the largest ever crater in the universe?
+       - could i know how deep was the largest ever crater in space?
+       - could i know how deep was the largest ever crater in the space?
+       - could i know how deep was the largest ever crater in the solar system?
+       - could i know how deep was the largest ever crater in solar system?
+       - can i know what is the largest crater in the universe?
+       - can i know what is the largest crater ever in the universe?
+       - can i know what is the largest crater in the space? 
+       - can i know what is the largest ever crater in the space?
+       - can i know what is the largest ever crater in the solar system?
+       - can i know what is the largest ever crater in solar system?
+       - can i know how wide is the largest crater in space?
+       - can i know how wide is the largest crater in the space?
+       - can i know how wide is the largst crater in the universe?
+       - can i know how wide is the largest crater in universe?
+       - can i know how wide is the largest crater in the solar system?
+       - can i know how wide is the largest crater in solar system?
+       - can i know where did the largest ever crater in the solar system occur?
+       - can i know how deep was the largest ever crater in the universe?
+       - can i know how deep was the largest ever crater in space?
+       - can i know how deep was the largest ever crater in the space?
+       - can i know how deep was the largest ever crater in the solar system?
+       - can i know how deep was the largest ever crater in solar system? 

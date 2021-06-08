@@ -1,0 +1,43 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: questions
+  steps:
+  - intent: galaxy_exit
+  - action: utter_galaxy_exit
+  - intent: biggest_blackhole
+  - action: utter_biggest_blackhole
+  - intent: common_galaxy
+  - action: utter_common_galaxy
+  - intent: natural_satellites
+  - action: utter_natural_satellites
+
+  

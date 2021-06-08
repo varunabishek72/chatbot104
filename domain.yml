@@ -1,0 +1,237 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - galaxy_exit
+  - biggest_blackhole
+  - common_galaxy
+  - natural_satellites
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"  
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_galaxy_exit:
+  - text: "It would take 25,000 light years to exit the galaxy."
+
+  utter_biggest_blackhole:
+  - text: "Messier 87 is the largest blackhole known to mankind. The radius of the blackhole is 60,000 light years. It would take you 53.49 million light years to reach Messier 87 from Earth."
+
+  utter_common_galaxy:
+  - text: "The most common type of galaxy that are discovered throughout the universe are Elliptical galaxies."
+
+  utter_natural_satellites:
+  - text: "There are 181 satellites in the solar system."
+
+  utter_faq/ask_name:
+  - text: "I'm Spacebot, your assistant in knowing space."
+
+  utter_faq/origin_espazimos:
+  - text: "Espazimos was procured from 3 words in 3 different languages; 
+           those were French, Italian, and Lithuanian, “Spazimo” meaning space in Italian, “Espace” meaning space in French, and “vietos” meaning space in Lithuanian. 
+           Together, they unite to form the word Espazimos!"
+
+  utter_faq/what_espazimos:
+  - text: "Espazimos is a frolic quiz that focuses on space-related topics, mixed with gamifications to kindle interest in students."
+
+  utter_faq/rules_espazimos:
+  - text: "Once the question is displayed, the 4 cards with the options are displayed.
+          
+          Out of the 4, 1 of them is the answer.
+           
+           Choose the option which you think is right. The right answer will be revealed in due time.
+           
+           You should answer within 60 seconds.
+           
+           Judges' call is the final.
+           
+           No negative points for wrong answers."
+
+  utter_faq/space_junk: 
+  - text: "Right now, 9,300 tons of Space Debris orbit the earth."
+   
+  utter_faq/space tourist:
+  - text: "Anousheh Ansari was the first woman tourist to ever visit Space."
+  
+  utter_faq/water_jupiter: 
+  - text: "Europa, a satellite of Jupiter, is presumed to have water underneath it's icy crust."
+
+  utter_faq/distant_object:
+  - text: "Voyager-1 is the most distant human-made object ever in Space. It was launched as Space
+           probe in 1977 by Nasa and has currently travelled1.7 billion miles (18.8 billion kilometers) from Earth."
+
+  utter_faq/distance_sun:
+  - text: "Our Sun is located 151.73 million kilometres from the earth." 
+
+  utter_faq/large_asteroid:
+  - text: "The Vredefort crater is the largest ever verified impact crater on Earth.
+           The impact happened around 2,023 million years ago, during the Paleoproterozoic Era.
+           The crater has a diamter of 99-186 miles, with it also creating 40 kilometer deep area too." 
+
+  utter_faq/woman_astronaut: 
+  - text: "In 2017, Whitson became the first female astronaut to command the International Space Station twice. On April 24, 2017.
+             Whitson broke the record for cumulative total days spent in space by any NASA astronaut, at 665 days, 22 hours, and 22 minutes."              
+
+  utter_faq/fastest_revolutiontime:
+  - text: "Jupiter is the fastest spinning planet about its axis .
+           It completes one rotation about its axis in about 10 hrs whereas Earth takes about 24 hours."
+
+  utter_faq/first_satellite:
+  - text: "Sputnik was the first ever man-made satellite launched into space. It was created by Soviet Union (USSR) and launched on 4th September, 1957."
+
+  utter_faq/planet_neptune:
+  - text: "Neptune is named after The Greek God of The Underworld; Poseidon."
+
+  utter_faq/largest_volcano:
+  - text: "Olympus Mon is the largest volcano in The Universe. It has a diamter the size of the
+           entire state of California. It has a height of nearly 22 kilometers and could also be seen from Earth with a Telescope."
+
+  utter_faq/invention_telescope:
+  - text: "Hans Lippershey invented the Telescope during the year 1608. It was later improvised by
+           Galileo Galilei."
+      
+  utter_faq/astronomer_sun:
+  - text: "Nicolaus Copernicus proposed the Heliocentric theory, and later published On the Revolutions of the Heavenly Spheres, which are based of his findings. The Catholic Church had later banned the Book, during the year 1616."
+
+  utter_faq/asteroid_belt:
+  - text: "The Kuiper Belt is an asteroid belt, between the planets; Mars and Jupiter. The Belt mostly comprises of icy objects."
+
+  utter_faq/constellation_hotteststar:
+  - text: "Space scientists have discovered the hottest place known in the Universe where temperatures reach an amazing 300 million degrees C. 
+           A cloud of searing gas is surrounding a swarm of galaxies clustered together five billion light-years away in the constellation of Virgo."
+
+  utter_faq/sun_equinox:
+  - text: "The day on which the Sun’s direct rays cross the celestial equator is known as a Equinox.
+           There are two equinoxes in each year. This year, First equinox happens at 20th of March and 23rd of September 2021."
+
+  utter_faq/alignment_celestialbodies:
+  - text: "Syzygy is the term used for the alignment of Three Celestial Bodies. 
+           The term is derived from the language Greek, roughly meaning yoked together."   
+
+  utter_faq/columbia_disaster:
+  - text: "The Columbia Space Disaster occurred when the Space Shuttle Columbia disintegrated fatally during the Re-entry in the Atmosphere.
+           All Seven members on the Shuttle were killed."                 
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  utter_faq/oldest_planet:
+  - text: "Jupiter is the oldest planet in our solar system, as ancient meteorites show. Jupiter is currently 4.603 billion years old."
+
+  utter_faq/supersonic_winds:
+  - text: "Neptune, the gas and ice giant in our solar system, has supersonic winds with a speed of
+           1,600 miles per hour. Neptune has been known to have giant, spinning storms with supersonic winds that could swallow the whole Earth."
+
+  utter_faq/sun_outerlayer:
+  - text: "The Corona is the Sun's outermost layer in it's atmosphere. The energy and the sunlight is given by outer-layer, Corona."
+
+  utter_faq/astronomer_daughternameinmoon:
+  - text: "Eugene Cernan was the last man to walk on the moon. He wrote his Daughter's initials in the dust of the moon
+           before climbing back into the lunar module, he also gave a speech signifying the moment."
+
+  utter_faq/nasa_fullform:
+  - text: "National Aeronautics and Space Administration is the full form of NASA, The USA's Space agency."
+
+  utter_faq/vesta_celestialbody:
+  - text: "Vesta is an asteroid in the Asteroid belt and is also the Brightest asteroid in the sky which could be seen from Earth. 
+           It is the second most massive body in the asteroid belt, surpassed by only Ceres, the Dwarf Planet."
+
+  utter_faq/coldestplace_universe:
+  - text: "The Bow Tie Nebula is the coldest natural place currently known in the universe with temperatures reaching 1 K (−272.15 °C; −457.87 °F)."
+
+  utter_faq/common_typestar:
+  - text: "Red dwarf stars are the most common type of star in the Milky-Way galaxy. Red dwarf stars account for 85% of atleast 100 billion stars in the Milky-Way Galaxy."
+
+  utter_faq/cost_spacesuit:
+  - text: "Building a spacesuit from scratch cost around 250 million with the necessary things needed such as oxygen, communications, telemetry, and everything else that a human needs to survive, all rolled into one tiny, human-formed spacecraft."
+
+  utter_faq/constellation_number:
+  - text: "According to International Astronomical Union, there are currently 88 Constellations present."
+
+  utter_faq/unitmeasurement_expansionuniverse:
+  - text: "The Hubble Constant is the unit of measurement used to describe the expansion of the universe. 
+           The cosmos has been getting bigger since the Big Bang kick-started the growth about 13.82 billion years ago"    
+
+  utter_faq/animal_space:
+  - text: "The first animal to make an orbital spaceflight around the Earth was the dog Laika, aboard the Soviet spacecraft Sputnik 2 on 3 November 1957."
+
+  utter_faq/whonamed_curosity:
+  - text: "Clara Ma, a 12 year old, sixth-grade student came up with the name Curiosity."
+
+  utter_faq/planet_diamond:
+  - text: "In 2012, scientists anounced that they had discovere 55 Cancri e, an exoplanet which is double the size of Earth, and is predominantly made of Diamonds and Graphite."   
+
+  utter_faq/milkyway_galaxytype:
+  - text: "The Milky-Way galaxy is a spiral galaxy, because if you could see it from top or bottom,
+           it would look like a spinning pinwheel."
+
+  utter_faq/strongest_magnetinuniverse:
+  - text: "Magnetars, young spinning neutrons star can have magnetic fields 1,000 trillion time stronger that Earth."
+
+  utter_faq/biggest_asteroidhit:
+  - text: "Comet Shoemaker-Levy 9 was a comet that broke apart in July 1992 and collided with Jupiter in July 1994. The comet had dimensions of 1.8 km. 
+           If that asteroid hit Earth, it would destroy all of life on Earth."  
+
+  utter_faq/age_universe:
+  - text: "The universe is 13.77 billion years old, according to scientists from varying space agencies."
+
+  utter_faq/neutron_spin:
+  - text: "Neutron Star can spin upto 716 times per second-faster than some theories predict is possible – and therefore may force researchers to revise their models."
+
+  utter_faq/super_moon:
+  - text: "A supermoon is a full moon or a new moon that nearly coincides with perigee—the closest that the Moon comes to the Earth in its elliptic orbit—resulting in a slightly larger-than-usual apparent size of the lunar disk as viewed from Earth. "
+  
+  utter_faq/largest_startype:
+  - text: "Red Supergiant Stars are the largest types of Stars present in the Universe.
+           The largest known red supergiant is thought to be VY Canis Majoris, measuring about 1800 times the size of the Sun. 
+           Imagine if the Sun extended out to the orbit of Saturn."
+
+  utter_faq/satellites_jupiter:
+  - text: "Scientist says that there are 79 total moons of Jupiter, with 53 named moons and 26 awaiting names."
+
+  utter_faq/largest_crater:
+  - text: "South Pole-Aitken crater
+          Measuring about 1,553 miles (2,500 kilometers) wide, the South Pole-Aitken crater is already one of the moon's largest mysteries. 
+          Not only is it the biggest impact crater in the solar system"
